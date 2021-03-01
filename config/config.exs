@@ -18,6 +18,10 @@ config :rocketpay, RocketpayWeb.Endpoint,
   pubsub_server: Rocketpay.PubSub,
   live_view: [signing_salt: "SemB4wXx"]
 
+config :rocketpay, :basic_auth,
+  username: "banana",
+  password: "nanica123"
+
 config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
